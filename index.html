@@ -1,12 +1,32 @@
 <! DOCKTYPE html>
 <html>
   <head>
-    <title>Your Title</title>
+    <title>Lahore</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>Hello World</p>
+    <h1>Welcome To Lahore</h1>
+    <p>Lahore </p>
 
   </body>
+  <script>
+    function changeBg(){
+
+      const image = [
+        'url("1.png")',
+        'url("2.png")',
+        'url("3.png")',
+        'url("4.png")',
+        'url("5.png")',
+        'url("6.png")',
+        'url("7.png")',
+      ]
+      const section = document.querySelector('section')
+      const bg = images [Math.floor(Math.random() *
+      image.lenght)];
+      section.style.backgroundImage = bg;
+
+      setInterval(changeBg, 100) 
+    }
+  </script>
 </html>
